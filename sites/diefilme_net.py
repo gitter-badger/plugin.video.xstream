@@ -178,7 +178,7 @@ def showHosters():
     hosters = []
     for sQuality, sDate, sUrl, sName in aResult[1]:
         hoster = dict()
-        if sAddby:
+        if sDate:
             hoster['displayedName'] = '%s - %s - Quality: %s' % (sDate.strip(), sName, sQuality)
         if sQuality.upper() in QUALITY_ENUM:
             hoster['quality'] = QUALITY_ENUM[sQuality.upper()]
